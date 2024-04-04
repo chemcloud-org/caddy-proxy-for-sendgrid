@@ -3,6 +3,10 @@
 }
 
 :80 {
+  log {
+    level DEBUG
+    output stdout
+  }
   header_up Host {host}
-  redir https://sendgrid.net{uri} permanent
+  reverse_proxy https://sendgrid.net
 }
