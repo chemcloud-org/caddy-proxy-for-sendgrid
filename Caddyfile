@@ -2,7 +2,7 @@
   auto_https off
 }
 
-https://url4322.chemcloud.com.au {
+http://url4322.chemcloud.com.au {
   reverse_proxy https://sendgrid.net {
     header_up Host {host}
   }
