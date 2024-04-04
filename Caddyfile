@@ -7,6 +7,8 @@
     level DEBUG
     output stdout
   }
-  header_up Host {host}
-  reverse_proxy https://sendgrid.net
+
+  reverse_proxy http://sendgrid.net {
+    header_up Host http://url4322.chemcloud.com.au
+  }
 }
