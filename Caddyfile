@@ -1,6 +1,6 @@
 :{$PORT}
-auto_https off
 
 reverse_proxy https://sendgrid.net {
+  auto_https off
   header_up Host url4322.chemcloud.com.au
 }
